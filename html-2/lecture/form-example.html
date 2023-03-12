@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Form</title>
+  </head>
+  <body>
+
+    <h1>My First Form</h1>
+    <form action='app/form-processing' method='get' target='_blank'>
+      <p>1) Firstname (blank) :<br><input type='text' name='firstname1' value=''/></p>
+      <p>2) Firstname ("Steve"):<br><input type='text' name='firstname2' value='Steve'/></p>
+      <p>3) Firstname (readonly):<br><input type='text' name='firstname3' value='Steve' readonly /></p>
+      <p>4) Firstname (disabled):<br><input type='text' name='firstname4' value='Steve' disabled /></p>
+      <p><input type='submit' name='submit' value='submit' /></p>
+    </form>
+
+    <p><strong>[Your Tasks]</strong> Things to try out (in order):</p>
+    <ol>
+      <li>Fill in and/or modify the fields. Determine which fields can be modified.</li>
+      <li>Determine which fields are being submitted to the processing script.</li>
+      <li>Confirm that submitted field <strong>names</strong> and <strong>values</strong> are visible in the url and in what format they are to be found.</li>
+      <li>Change the <strong>method</strong> to <strong>post</strong> and observe the difference in the url.</li>
+      <li>What happens if you remove the <strong>name attribute</strong> in the submit input?</li>
+      <li>What happens if you make the submit button <strong>readonly</strong>?</li>
+      <li>What happens if you make the submit button <strong>disabled</strong>?</li>
+    </ol>
+  </body>
+</html>
