@@ -9,8 +9,7 @@
                 border: 1px solid #333;
             }
         
-            thead,
-            tfoot {
+            th {
                 background-color: #333;
                 color: #fff;
             }
@@ -37,17 +36,13 @@
 
     <h3>Simple table with merged header colspan="2"</h3>
     <table>
-        <thead>
-            <tr>
-                <th colspan="2">The table header</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>The table body</td>
-                <td>with two columns</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
     </table>
 
     <h3>Population Table with caption</h3>
@@ -55,12 +50,12 @@
         <caption>
             Population Table
         </caption>
-        <thead>
+        <tr>
             <th>Countries</th>
             <th>Capitals</th>
             <th>Population</th>
             <th>Language</th>
-        </thead>
+        </tr>
         <tr>
             <td>USA</td>
             <td>Washington, D.C.</td>
@@ -79,12 +74,8 @@
     <p>Here is a table element. It contains a <strong>caption</strong> element, 5 <strong>rows</strong> and each row
         contains a mix of <strong>table heading</strong> and <strong>table data</strong> cells.</p>
     <!-- Please note border, sellspacing and cellpadding are outdated styling attributes and should not be used in a HTML5 document.  -->
-    <tfooter>
-        <!-- create a totals row here using <tr> and <th> elements. We will cover rowspan and colspan in the tutes. -->
-    </tfooter>
     <table border="1" cellspacing="5" cellpadding="20">
         <caption>Maths is <s>fun</s> bad!!</caption>
-        <thead>
             <tr>
                 <th>X</th>
                 <th>1</th>
@@ -92,8 +83,6 @@
                 <th>3</th>
                 <th>4</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <th>1</th>
                 <td>1</td>
@@ -122,8 +111,6 @@
                 <td>12</td>
                 <td>16</td>
             </tr>
-        </tbody>
-
     </table>
 </body>
 
