@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Additional Input Types</title>
+</head>
+<h1>Types: email, number, url</h1>
+<p>
+    <code>&lt;input type='<span>email</span>' name='<span>myemail</span>' value='<span>e94495@rmit.edu.au</span>' /&gt;</code>
+</p>
+<p><input type="email" name="myemail" style="width:15em" value="e94495@rmit.edu.au"></p>
+<p>
+    <code>&lt;input type='<span>url</span>' name='<span>myurl</span>' value='<span>https://titan.csit.rmit.edu.au/~s1234567/wp</span>' /&gt;</code>
+</p>
+<p><input type="url" name="myurl" style="width:25em" value="https://titan.csit.rmit.edu.au/~s1234567/wp"></p>
+<p>
+    <code>&lt;input type='<span>number</span>' name='<span>mynumber</span>' value='<span>10</span>' /&gt;</code>
+</p>
+<p><input type="number" name="mynumber" value="10"></p>
+
+<h1>Types: color, date, range</h1>
+<p>
+    <code>&lt;input type='<span>color</span>' name='<span>mycolor</span>' value='<span>#BADA55</span>' /&gt;</code>
+</p>
+<p><input type="color" name="mycolor" value="#BADA55"></p>
+<p>
+    <code>&lt;input type='<span>date</span>' name='<span>dateofbirth</span>' value='<span>1998-01-01</span>' /&gt;</code>
+</p>
+<p><input type="date" name="datofbirth" value="1998-01-01"></p>
+<p><code>&lt;input type='<span>range</span>' name='<span>percent</span>' value='<span>50</span>' /&gt;</code>
+</p>
+<p><input type="range" name="percent" value="50"></p>
+
+<h1>Attributes: placeholder &amp; autocomplete</h1>
+<p>
+    <code>&lt;input type='<span>text</span>' name='<span>firstname</span>' placeholder='<span>First Name</span>'/&gt;</code>
+</p>
+<p><input type="text" name="firstname" placeholder="First Name"></p>
+<p>
+    <code>&lt;input type='<span>text</span>' name='<span>firstname</span>' placeholder='<span>First Name</span>' autocomplete='<span>off</span>'/&gt;</code>
+</p>
+<p><input type="text" name="firstname" placeholder="First Name" autocomplete="off"></p>
+<p><i>If using your personal computer, your browser may suggest your first name in the first field and suggest
+        nothing in the second field</i>.</p>
+
+<h1>Attributes: required &amp; pattern</h1>
+<form onsubmit="return false;">
+    <p>
+        <code>&lt;input type='<span>text</span>' name='<span>firstname</span>' placeholder='<span>First Name</span>' <span>required</span>/&gt;</code>
+    </p>
+    <p><input type="text" name="firstname" placeholder="First Name" required=""></p>
+    <p>
+        <code>&lt;input type='<span>text</span>' ... pattern='<span>Steve</span>' title='<span>Your first name must be Steve</span>'/&gt;</code>
+    </p>
+    <p><input type="text" name="firstname" placeholder="First Name" pattern="Steve"
+            title="Your first name must be Steve"></p>
+    <p><input type="submit" value="Test Fields"></p>
+</form>
+
+<h1>Attributes: min, max &amp; step</h1>
+<form onsubmit="return false;">
+    <p>Choose an integer between 1 and 10:</p>
+    <p>
+        <code>&lt;input type='<span>number</span>' min='<span>1</span>' max='<span>10</span>' step='<span>1</span>'/&gt;</code>
+    </p>
+    <p><input type="number" min="1" max="10" step="1"></p>
+    <p>Choose an odd integer between 11 and 111:</p>
+    <p>
+        <code>&lt;input type='<span>number</span>' min='<span>11</span>' max='<span>111</span>' step='<span>2</span>'/&gt;</code>
+    </p>
+    <p><input type="number" min="11" max="111" step="2"></p>
+    <p><input type="submit" value="Test Fields"></p>
+    <details class="qna">
+        <summary>What happens if you leave the fields blank?</summary>It will allow the blank field to pass, which
+        is bad. Make sure you use the required attribute as well to stop invalid data from being submitted.
+    </details>
+</form>
+</body>
+
+</html>
