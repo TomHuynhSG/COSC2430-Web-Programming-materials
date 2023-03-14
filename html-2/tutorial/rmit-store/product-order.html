@@ -11,112 +11,114 @@
 </head>
 
 <body>
-    <!--==========Main Header Section==========-->
-    <header>
-        <center>
+    <center>
+        <!--==========Main Header Section==========-->
+        <header>
+
             <a href="index.html">
                 <img src="assets/images/rmit-store-logo.png" width="300" alt="RMIT logo">
             </a>
             <nav>
                 <div>
-                    <span><a href="https://www.campusstore.rmit.edu.au/collections/clothing">Clothing</a></span>&nbsp;
-                    <span><a
-                            href="https://www.campusstore.rmit.edu.au/collections/accessories">Accessories</a></span>&nbsp;
-                    <span><a
-                            href="https://www.campusstore.rmit.edu.au/collections/stationery">Stationery</a></span>&nbsp;
-                    <span><a href="https://www.campusstore.rmit.edu.au/collections/course">Course</a></span>&nbsp;
-                    <span><a
-                            href="https://www.campusstore.rmit.edu.au/collections/special-collection">Special-Collection</a></span>&nbsp;
-                    <span><a href="https://www.campusstore.rmit.edu.au/collections/sale">Sale</a></span>&nbsp;
-                    <span><a href="#item-list">Buy Now!</a></span>&nbsp;
+                    <a href="https://www.campusstore.rmit.edu.au/collections/clothing">Clothing</a>&nbsp;
+                    <a href="https://www.campusstore.rmit.edu.au/collections/accessories">Accessories</a>&nbsp;
+                    <a href="https://www.campusstore.rmit.edu.au/collections/stationery">Stationery</a>&nbsp;
+                    <a href="https://www.campusstore.rmit.edu.au/collections/course">Course</a>&nbsp;
+                    <a
+                        href="https://www.campusstore.rmit.edu.au/collections/special-collection">Special-Collection</a>&nbsp;
+                    <a href="https://www.campusstore.rmit.edu.au/collections/sale">Sale</a>&nbsp;
+                    <a href="#item-list">Buy Now!</a>&nbsp;
                 </div>
             </nav>
-        </center>
-    </header>
-    <!--==========Main Header Section==========-->
+        </header>
+        <!--==========Main Header Section==========-->
 
-    <!--==========Slider Section==========-->
-    <section>
-        <center><img src="assets/images/slider.jpg" width="970" alt="RMIT banner"></center>
-    </section>
-    <!--==========Slider Section==========-->
-    <center>
-        <main style="width: 500px;">
-            <section>
+        <!--==========Slider Section==========-->
+        <br>
+        <section>
+            <img src="assets/images/slider.jpg" width="970" alt="RMIT banner">
+        </section>
+        <!--==========Slider Section==========-->
 
-                <h2>Order Products Form</h2>
-
-                <form action="form-processing" method="post" id="item-list">
-                    <fieldset>
-                        <legend>Enter your personal information</legend>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" required><br><br>
-
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" required><br><br>
-
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" required><br>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Enter your shipping information</legend>
-                        <label for="address">Address:</label>
-                        <input type="text" id="address" name="address"><br><br>
-
-                        <label for="district">District:</label>
-                        <select id="district" name="district">
-                            <option value="">Select a district</option>
-                            <option value="1">District 1</option>
-                            <option value="2">District 2</option>
-                            <option value="3">District 3</option>
-                            <!-- Add more district options as needed -->
-                        </select><br><br>
-
-                        <label for="city">City:</label>
-                        <select id="city" name="city">
-                            <option value="">Select a city</option>
-                            <option value="HCMC">Ho Chi Minh City</option>
-                            <option value="HN">Hanoi</option>
-                            <option value="DN">Da Nang</option>
-                            <!-- Add more city options as needed -->
-                        </select><br><br>
-
-                        <label for="postcode">Postcode:</label>
-                        <input type="text" id="postcode" name="postcode"><br><br>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Purchase Options</legend>
-                        <label for="product-select">Select product(s):</label>
-                        <select id="product-select" name="product" multiple>
-                            <option value="fairtrade-pocket-hoodie">Fairtrade Pocket Hoodie</option>
-                            <option value="fairtrade-zip-hoodie">Fairtrade Zip Hoodie</option>
-                            <option value="rudby-jergy">Rudby Jergy</option>
-                            <option value="topaz-premium-zip-jacket">Topaz Premium Zip Jacket</option>
-                            <option value="rmit-fairtrade-polo">Rmit Fairtrade Polo</option>
-                            <option value="portable-charger">Portable Charger</option>
-                            <option value="face-mask">Face Mask</option>
-                            <option value="hoddie-koala">Hoddie Koala</option>
-                            <option value="graduation-redbacks-pack">Graduation Redbacks Pack</option>
-                            <option value="vinyl-pixel-keyring">Vinyl Pixel Keyring</option>
-                            <option value="applied-science-course-kit">Applied Science Course Kit</option>
-                            <option value="graduation-tie">Graduation Tie</option>
-                        </select>
-                        <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
-                    </fieldset>
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-        </main>
-    </center>
-
-    <!--==========Footer Area==========-->
-    <footer>
+        <!--==========Main Section==========-->
         <center>
-            <h4>© Copyright 2023 by Tom Huynh @ RMIT Vietnam | Made with ❤️</h4>
+            <main style="width: 500px;">
+                <section>
+
+                    <h2>Order Products Form</h2>
+
+                    <form action="form-processing" method="post" id="item-list">
+                        <fieldset>
+                            <legend>Enter your personal information</legend>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required><br><br>
+
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required><br><br>
+
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required><br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Enter your shipping information</legend>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address"><br><br>
+
+                            <label for="district">District:</label>
+                            <select id="district" name="district">
+                                <option value="">Select a district</option>
+                                <option value="1">District 1</option>
+                                <option value="2">District 2</option>
+                                <option value="3">District 3</option>
+                                <!-- Add more district options as needed -->
+                            </select><br><br>
+
+                            <label for="city">City:</label>
+                            <select id="city" name="city">
+                                <option value="">Select a city</option>
+                                <option value="HCMC">Ho Chi Minh City</option>
+                                <option value="HN">Hanoi</option>
+                                <option value="DN">Da Nang</option>
+                                <!-- Add more city options as needed -->
+                            </select><br><br>
+
+                            <label for="postcode">Postcode:</label>
+                            <input type="text" id="postcode" name="postcode"><br><br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Purchase Options</legend>
+                            <label for="product-select">Select product(s):</label>
+                            <select id="product-select" name="product" multiple>
+                                <option value="fairtrade-pocket-hoodie">Fairtrade Pocket Hoodie</option>
+                                <option value="fairtrade-zip-hoodie">Fairtrade Zip Hoodie</option>
+                                <option value="rudby-jergy">Rudby Jergy</option>
+                                <option value="topaz-premium-zip-jacket">Topaz Premium Zip Jacket</option>
+                                <option value="rmit-fairtrade-polo">Rmit Fairtrade Polo</option>
+                                <option value="portable-charger">Portable Charger</option>
+                                <option value="face-mask">Face Mask</option>
+                                <option value="hoddie-koala">Hoddie Koala</option>
+                                <option value="graduation-redbacks-pack">Graduation Redbacks Pack</option>
+                            </select>
+                            <p><strong>Hint:</strong> Use Shift/Ctrl key to select multiple products!</p>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Order Now!">
+                    </form>
+                </section>
+            </main>
         </center>
-    </footer>
-    <!--==========Footer Area==========-->
+        <!--==========Main Section==========-->
+
+        <!--==========Footer Area==========-->
+        <footer>
+
+            <h4>© Copyright 2023 by Tom Huynh @ RMIT Vietnam | Made with ❤️</h4>
+
+        </footer>
+        <!--==========Footer Area==========-->
+    </center>
 </body>
 
 </html>
