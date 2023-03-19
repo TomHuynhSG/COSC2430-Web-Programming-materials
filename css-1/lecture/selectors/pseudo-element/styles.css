@@ -1,0 +1,17 @@
+h1::before {
+    content: "Content before";
+    background-color: yellow;
+}
+
+.target-2::after {
+    content: "Content after";
+    background-color: blue;
+}
+
+.target-4::first-letter {
+    color: green;
+}
+
+div::first-line {
+    color: red;
+}
