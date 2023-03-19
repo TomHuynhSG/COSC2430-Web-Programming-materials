@@ -1,0 +1,16 @@
+p:first-child{
+    font-size: 50px;
+}
+
+p:nth-child(2){
+    font-size: 40px;
+}
+
+p:nth-child(3){
+    font-size: 30px;
+}
+
+
+p:nth-child(4) {
+    font-size: 20px;
+}
