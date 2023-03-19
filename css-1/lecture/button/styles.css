@@ -3,7 +3,6 @@
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    width: 80px;
     padding: 10px;
     border: 1px solid red;
     border-radius: 5px;
@@ -13,3 +12,5 @@
 .my-button:hover {
     background: #e600ff;
 }
+
+
