@@ -1,0 +1,19 @@
+* {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+.box1, .box2 {
+    border: 2px solid black;
+}
+
+.box1>p {
+    color: green;
+}
+
+.target-4~p {
+    color: purple;
+}
