@@ -4,44 +4,46 @@ html  {
 
 .container>h1{
     text-align: center;
-    color:white
+    color:white;
+    font-size:60px;
 }
 
 .business-card{
     color: black;
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius:15px;
-    width:250px;
+    width:500px;
     text-align: center;
     margin: 3% auto;
 }
 
 .business-card #rmit-logo {
-    width: 150px;
-    margin: 15px;
+    width: 300px;
+    margin: 30px;
 }
 
 .business-card #tom-photo {
-    width: 150px;
+    width: 300px;
 }
 
 .business-card h1{
     font-family: 'Sacramento', cursive;
-    font-size: 40px;
-    margin: 10px;
+    font-size: 80px;
+    margin: 20px;
 }
 
 .business-card p{
     font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .business-card .contact-box {
-    border:2px solid #000054;
     background-color: #000054;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
     
 }
 
@@ -49,13 +51,14 @@ html  {
     color: white;
     text-decoration: none;
     font-family: 'Merriweather', serif;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .business-card .contact-box .icon{
-    font-size: 14px;
+    font-size: 28px;
 }
 
 .business-card p:last-child{
-    font-size: 12px;
+    font-size: 24px;
+    font-weight:lighter;
 }
