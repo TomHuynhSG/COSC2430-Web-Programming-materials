@@ -43,12 +43,6 @@ a[href*="insensitive" i] {
     color: cyan;
 }
 
-/* Links with "cAsE" anywhere in the URL,
-with matching capitalization */
-a[href*="cAsE" s] {
-    color: pink;
-}
-
 /* Links that end in ".org" */
 a[href$=".org"] {
     color: red;
