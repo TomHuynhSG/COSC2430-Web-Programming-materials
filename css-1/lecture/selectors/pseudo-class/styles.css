@@ -2,20 +2,20 @@ a:link {
     color: green;
 }
 
-a:visited {
-    color: purple;
+a:hover {
+    cursor: progress;
+    background-color: aqua;
 }
 
 a:active {
     color: red;
 }
 
-a:hover {
-    cursor: progress;
-    background-color: aqua;
+a:visited {
+    color: purple;
 }
 
-#selected:focus {
+#color-focus:focus {
     background-color: pink;
 }
 
@@ -27,14 +27,14 @@ a:hover {
     color: deepskyblue;
 }
 
-.box2 p:nth-child(odd) {
+.box2 p:nth-child(even) {
     color: forestgreen;
 }
 
 h2:first-child {
-    background: green;
+    background-color: green;
 }
 
 p:last-child {
-    background: purple;
+    background-color: purple;
 }
