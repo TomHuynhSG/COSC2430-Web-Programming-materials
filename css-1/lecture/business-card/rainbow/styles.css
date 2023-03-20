@@ -5,7 +5,7 @@
 }
 
 :root {
-    --card-height: 85vh;
+    --card-height: 80vh;
     --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -90,7 +90,7 @@ a {
 
 .card {
     background-color:white;
-    padding: 1vh;
+    padding: 2vh;
 }
 .business-card {
     width: var(--card-width);
@@ -117,7 +117,7 @@ a {
 
 .business-card p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.3vh;
+    font-size: 2vh;
     font-weight: bold;
     margin: 0px;
 }
