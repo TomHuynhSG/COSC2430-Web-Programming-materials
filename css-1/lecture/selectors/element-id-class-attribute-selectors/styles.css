@@ -7,16 +7,16 @@ span {
 }
 
 .red {
-    color: #f33;
+    color: purple;
 }
-  
+
 .yellow-bg {
-background: #ffa;
+    background: yellow;
 }
 
 .fancy {
-font-weight: bold;
-text-shadow: 4px 4px 3px #77f;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px green;
 }
 
 #special {
@@ -29,27 +29,27 @@ a {
 
 /* Internal links, beginning with "#" */
 a[href^="#"] {
-background-color: gold;
+    background-color: gold;
 }
 
 /* Links with "example" anywhere in the URL */
 a[href*="example"] {
-background-color: silver;
+    background-color: silver;
 }
 
 /* Links with "insensitive" anywhere in the URL,
     regardless of capitalization */
 a[href*="insensitive" i] {
-color: cyan;
+    color: cyan;
 }
 
 /* Links with "cAsE" anywhere in the URL,
 with matching capitalization */
 a[href*="cAsE" s] {
-color: pink;
+    color: pink;
 }
 
 /* Links that end in ".org" */
 a[href$=".org"] {
-color: red;
+    color: red;
 }
