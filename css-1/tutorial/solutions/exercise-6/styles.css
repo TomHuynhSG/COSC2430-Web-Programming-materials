@@ -1,0 +1,19 @@
+/* YOUR STYLE GOES IN HERE */
+
+
+#board .square:nth-child(even) {
+    background-color: #eeeed2;
+}
+
+#board .square:nth-child(odd) {
+    background-color: #769656;
+}
+
+/* Alternative solution */
+/* #board .square:nth-child(2n) {
+    background-color: #eeeed2;
+}
+
+#board .square:nth-child(2n+1) {
+    background-color: #769656;
+} */
