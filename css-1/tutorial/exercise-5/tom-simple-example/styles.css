@@ -27,6 +27,9 @@ html  {
 
 .business-card #tom-photo {
     width: 250px;
+    border: 2px solid #E61E2A;
+    border-radius: 50%;
+
 }
 
 .business-card h1{
