@@ -30,6 +30,16 @@ body {
     text-decoration: none;
 }
 
+.mobile-nav-icon{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size:20px;
+    background-color: #E61E2A;
+    display: none;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -47,5 +57,21 @@ body {
         margin-right: 0;
         margin-bottom: 10px;
         font-size: 20px;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
     }
 }
