@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Position property values of "static", "relative", "absolute" and "fixed" Example</h1>
+  <p>
+    In this example, we have a div element with the class container that serves as the parent element. Inside this container, we have four div elements. Since we do not set any position propety for these boxes so they all have position "static".
+  </p>
+  <div class="container">
+    <div class="box red-bg"></div>
+    <div class="box blue-bg"></div>
+    <div class="box green-bg"></div>
+    <div class="box purple-bg"></div>
+  </div>
+  <p>
+    In the below example, inside the container, we have four div elements, each with a different positioning method applied to it.
+  </p>
+  <p>
+    <ul>
+      <li><strong>Red box</strong>: The static element has a position property set to static. This is the default position value, and it means that the element will flow in the normal document order, and its position cannot be adjusted using the top, bottom, left, or right properties. In this case, the element will appear in the top left corner of the parent container, with a red background color.</li>
+      <li><strong>Blue box</strong>: The relative element has a position property set to relative. This means that the element's position can be adjusted using the top, bottom, left, or right properties, but it will still be positioned relative to its original position in the document flow. In this case, we have set top: 50px and left: 50px, so the element will be positioned 50 pixels down and 50 pixels to the right of its normal position. It has a blue background color.</li>
+      <li><strong>Green box</strong>: The absolute element has a position property set to absolute. This means that the element is positioned relative to its <strong>nearest positioned ancestor element (got position relative)</strong>, or if none exists, relative to the initial containing block (usually the viewport). In this case, we have set top: 100px and left: 100px, so the element will be positioned 100 pixels down and 100 pixels to the right of the container's top left corner. It has a green background color.</li>
+      <li><strong>Purple box</strong>: The fixed element has a position property set to fixed. This means that the element is positioned relative to the viewport, and will stay in the same position even if the page is scrolled. In this case, we have set bottom: 150px and right: 50px, so the element will be positioned 150 pixels down and 50 pixels from the right edge of the viewport. It has a purple background color</li>
+    </ul>
+  </p>
+  <div class="container">
+    <div class="static box red-bg"></div>
+    <div class="relative box blue-bg"></div>
+    <div class="absolute box green-bg"></div>
+    <div class="fixed box purple-bg"></div>
+  </div>
+  <p><strong>[Your Task] What happens if you set the container to be "static" (default value) instead of "relative", what will happen to the green box?</strong></p>
+</body>
+
+</html>
