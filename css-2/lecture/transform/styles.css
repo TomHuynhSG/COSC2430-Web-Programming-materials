@@ -1,0 +1,16 @@
+.container {
+    margin-top:400px
+}
+.container .spaceship, .container .rocket{
+    display: inline-block;
+    font-size: 30px;
+    transition: 1s ease-in-out;
+}
+
+.container:hover .rocket{
+    transform: translate(100px, -300px) rotate(-45deg) scale(2);
+}
+
+.container:hover .spaceship{
+    transform: translate(-100px, -350px) rotate(720deg) scale(3);
+}
