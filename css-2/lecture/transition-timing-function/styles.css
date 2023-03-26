@@ -1,4 +1,4 @@
-div {
+.container div {
     height: 75px;
     width: 75px;
     background: yellowgreen;
@@ -22,6 +22,6 @@ div {
     transition-timing-function: ease-out;
 }
  
-div:hover {
-    width: 300px;
+.container:hover div{
+    margin-left: 500px;
 }
