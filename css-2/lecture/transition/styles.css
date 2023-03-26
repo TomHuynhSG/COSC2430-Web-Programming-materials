@@ -29,6 +29,6 @@
     background-color: green;
 }
 
-.many-box:hover{
-    margin-left:300px;
+.many-box:hover .small-box{
+    margin-left: 300px;
 }
