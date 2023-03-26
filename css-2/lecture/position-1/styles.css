@@ -1,0 +1,45 @@
+.example-element-container {
+    position: relative;
+    text-align: left;
+}
+
+.box {
+    margin: 0 3px;
+    background-color: rgba(0, 0, 255, 0.2);
+    border: 3px solid #00f;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    text-align: center;
+    font-size:12px;
+}
+
+.example-element {
+    background-color: #ff0;
+    border: 3px solid red;
+    z-index: 1;
+}
+
+.static-position{
+    position: static;
+}
+
+.relative-position{
+    position: relative;
+    top: 20px; left: 20px;
+}
+
+.absolute-position{
+    position: absolute;
+    top: 20px; left: 20px;
+}
+
+.fixed-position{
+    position: fixed;
+    bottom: 20px;
+    right:20px
+}
+
+body{
+    height: 1200px;
+}
