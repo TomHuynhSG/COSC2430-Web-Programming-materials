@@ -1,0 +1,167 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+
+    font-family: Roboto, sans-serif;
+    font-size: 2em;
+    padding: 0 10vw;
+
+}
+
+.box {
+    text-align: center;
+    color: white;
+    margin: 2px;
+}
+
+.box-one {
+    background-color: #f1c40f;
+    height: 50px;
+    width: 45px;
+}
+
+.box-two {
+    background-color: #2ecc71;
+    height: 40px;
+    width: 50px;
+}
+
+.box-three {
+    background-color: #e74c3c;
+    height: 50px;
+    width: 50px;
+}
+
+.box-four {
+    background-color: #3498db;
+    height: 50px;
+    width: 75px;
+}
+
+.box-one-no-size {
+    background-color: #f1c40f;
+}
+
+.box-two-no-size {
+    background-color: #2ecc71;
+}
+
+.box-three-no-size {
+    background-color: #e74c3c;
+}
+
+.box-four-no-size {
+    background-color: #3498db;
+}
+
+
+.container {
+    background-color: #ecf0f1;
+    width: 500px;
+    height: 250px;
+}
+
+.container-small {
+    background-color: #ecf0f1;
+    width:200px;
+    border: 3px solid black;
+}
+
+
+.container-flex {
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse{
+    flex-direction: column-reverse;
+
+}
+
+.flex-direction-row{
+    flex-direction: row;
+
+}
+
+.flex-direction-row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.justify-content-flex-start{
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end{
+    justify-content: flex-end;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.align-items-flex-start{
+    align-items: flex-start;
+}
+.align-items-flex-end{
+    align-items: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.align-items-baseline{
+    align-items: baseline;
+}
+
+.align-content-strech{
+    align-content: strech;
+}
+
+.align-content-flex-start{
+    align-content: flex-start;
+}
+
+.align-content-flex-end{
+    align-content: flex-end;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.align-content-space-between{
+    align-content: space-between;
+}
+
+.align-content-space-around{
+    align-content: space-around;
+}

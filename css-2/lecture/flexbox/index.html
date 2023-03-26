@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Flexbox Examples</h1>
+  <h2>Setup</h2>
+  <p>Create a container and its children without "display: flex":</p>
+  <div class="container">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>Now adding "display:flex" to the container:</p>
+  <div class="container container-flex">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <h2>1️⃣ flex-direction</h2>
+  <p>"flex-direction: column": Flex items are laying out in vertical column</p>
+  <div class="container container-flex flex-direction-column">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"flex-direction: column-reverse": Flex items are laid out in a vertical column but in a reversed order compared to
+    its HTML structure.</p>
+  <div class="container container-flex flex-direction-column-reverse">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"flex-direction: row (default)": Flex items are laid out in horizontal rows - which is also the flex default mode.
+  </p>
+  <div class="container container-flex flex-direction-row">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"flex-direction: row-reverse": Flex items are laid out in a vertical column but in a reversed order compared to its
+    HTML structure.</p>
+  <div class="container container-flex flex-direction-row-reverse">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <h2>2️⃣ flex-wrap</h2>
+  <p>This experiment, we will make container width is only 300px to squeeze items together!</p>
+  <p>"flex-wrap: nowrap" (default):
+    <ul>
+      <li>By default, flex items will all try to fit onto one line.</li>
+      <li>When wrapping is disabled, flex items squish if there is insufficient room. If they can't squish any further, they may get cut off.</li>
+    </ul>
+  </p>
+  <div class="container-small container-flex">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-two">6</div>
+    <div class="box box-three">7</div>
+    <div class="box box-four">8</div>
+    <div class="box box-one">9</div>
+    <div class="box box-two">10</div>
+  </div>
+
+  <p>"flex-wrap: wrap":
+    <ul>
+      <li>The flex items break into multiple lines to fit inside the container.</li>
+    </ul>
+  </p>
+  <div class="container-small container-flex flex-wrap">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-two">6</div>
+    <div class="box box-three">7</div>
+    <div class="box box-four">8</div>
+    <div class="box box-one">9</div>
+    <div class="box box-two">10</div>
+  </div>
+
+  <p>"flex-wrap: wrap-reverse":
+    <ul>
+      <li>The flex items break into multiple lines to fit inside the container but in a reversed order compared to its HTML structure.</li>
+      <li>[Your Task] Let's also resize the container to see how the container's size affects how items break. </li>
+    </ul>
+  </p>
+  <div class="container-small container-flex flex-wrap-reverse">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-two">6</div>
+    <div class="box box-three">7</div>
+    <div class="box box-four">8</div>
+    <div class="box box-one">9</div>
+    <div class="box box-two">10</div>
+  </div>
+
+  <h2>3️⃣ justify-content</h2>
+  <p>When you want to distribute space between and around child items along the flex container's main axis.</p>
+  <p>🚩 Beware that using justify-content along with flex-direction: column and flex-direction: row would produce different outputs.</p>
+  <p>"justify-content: flex-start (default):
+    <ul>
+      <li>With flex-direction: row as it is the default mode of display:flex.</li>
+    </ul>
+  </p>
+  <div class="container container-flex justify-content-flex-start">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"justify-content: flex-end":
+    <ul>
+      <li>With flex-direction: row as it is the default mode of display:flex.</li>
+    </ul>
+  </p>
+  <div class="container container-flex justify-content-flex-end">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"justify-content: center":
+    <ul>
+      <li>With flex-direction: row as it is the default mode of display:flex.</li>
+    </ul>
+  </p>
+  <div class="container container-flex justify-content-center">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"justify-content: space-around":
+    <ul>
+      <li>With flex-direction: row as it is the default mode of display:flex.</li>
+    </ul>
+  </p>
+  <div class="container container-flex justify-content-space-around">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"justify-content: space-between":
+    <ul>
+      <li>With flex-direction: row as it is the default mode of display:flex.</li>
+    </ul>
+  </p>
+  <div class="container container-flex justify-content-space-between">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <h2>4️⃣ align-items</h2>
+  <p>Let's add container height to see the effect.</p>
+  <p>"align-items: flex-start":</p>
+  <div class="container container-flex align-items-flex-start">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"align-items: flex-end":</p>
+  <div class="container container-flex align-items-flex-end">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+  <p>"align-items: center":</p>
+  <div class="container container-flex align-items-center">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+  </div>
+
+  <p>"align-items: stretch":</p>
+  <div class="container container-flex align-items-stretch">
+    <div class="box box-one-no-size">1</div>
+    <div class="box box-two-no-size">2</div>
+    <div class="box box-three-no-size">3</div>
+    <div class="box box-four-no-size">4</div>
+  </div>
+
+  <h2>5️⃣ align-content</h2>
+  <p>Let's add container height to see the effect.</p>
+  <p>This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse).</p>
+  <p>A single-line flexible container (i.e., where flex-wrap is set to its default value, no-wrap) will not reflect align-content.</p>
+  <p>"align-content: stretch (default)":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-stretch">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+
+  <p>"align-content: flex-start":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-flex-start">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+
+  <p>"align-content: flex-end":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-flex-end">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+
+  <p>"align-content: center":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-center">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+  <p>"align-content: space-between":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-space-between">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+
+  <p>"align-content: space-around":
+    <ul>
+      <li>Beware that you only see this effect when flex items break into multiple lines.</li>
+    </ul>
+  </p>
+  <div class="container container-flex flex-wrap align-content-space-around">
+    <div class="box box-one">1</div>
+    <div class="box box-two">2</div>
+    <div class="box box-three">3</div>
+    <div class="box box-four">4</div>
+    <div class="box box-one">5</div>
+    <div class="box box-three">6</div>
+    <div class="box box-one">7</div>
+    <div class="box box-two">8</div>
+    <div class="box box-three">9</div>
+    <div class="box box-two">10</div>
+    <div class="box box-three">11</div>
+    <div class="box box-one">12</div>
+    <div class="box box-four">13</div>
+    <div class="box box-two">14</div>
+    <div class="box box-three">15</div>
+    <div class="box box-four">16</div>
+    <div class="box box-one">17</div>
+    <div class="box box-two">18</div>
+    <div class="box box-three">19</div>
+    <div class="box box-one">20</div>
+  </div>
+</body>
+
+</html>

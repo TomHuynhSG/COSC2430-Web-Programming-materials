@@ -50,3 +50,11 @@
     background-color: purple;
 }
 
+
+
+.parent {
+    display: flex;
+    align-items: center;
+}
+
+
