@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h2>Demonstrating the Inline, Block and Inline-block Display Properties</h2>
-     
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Display Property Example</h1>
+  <p>An example showing the difference between display property values of inline, block, and inline-block.</p>
+
+  <h2>Inline</h2>
+  <p>This text is <span class="inline-example">inline</span>. <strong>Notice how the width and height of the inline element are ignored, and the margin and padding push the element away horizontally but not vertically, so it does not break the flow of the document </strong>. Here are longer text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione exercitationem hic corrupti saepe eveniet, doloremque aperiam molestiae explicabo? Sed necessitatibus iste earum tempore eius? Nulla assumenda optio aliquid id? Magni? Lorem ipsum dolor sit amet, consectetur adipisicing <span class="inline-example">inline</span> <span class="inline-example">inline</span> <span class="inline-example">inline</span> elit. Doloremque quaerat, cum incidunt maxime, sapiente, eos architecto cumque quae nemo laudantium qui vel. Placeat impedit eos ducimus dolorem ex doloribus atque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere facilis ea accusamus nihil non repudiandae quae iste consequuntur laboriosam, adipisci architecto ad odio dicta temporibus. Quibusdam ducimus nobis inventore maiores!</p>
+
+  <h2>Block</h2>
+  <div class="block-example">
+    <p>This text is in a block element. Notice how the width, height, margin, and padding are all respected, and the block element breaks the flow of the document. It takes the full width of the page.</p>
+  </div>
+  <div class="block-example">
+    <p>This text is in a block element. Notice how the width, height, margin, and padding are all respected, and the block element breaks the flow of the document. It takes the full width of the page.</p>
+  </div>
+    <div class="block-example">
+    <p>This text is in a block element. Notice how the width, height, margin, and padding are all respected, and the block element breaks the flow of the document. It takes the full width of the page.</p>
+  </div>
+
+  <h2>Inline-block</h2>
+  <div class="inline-block-example">
+    <p>This text is in an inline-block element. Notice how the width, height, margin, and padding are all respected, and the inline-block element behaves like an inline element except for the width, height, margin, and padding are all respected.</p>
+  </div>
+  <div class="inline-block-example">
+    <p>This text is in an inline-block element. Notice how the width, height, margin, and padding are all respected, and the inline-block element behaves like an inline element except for the width, height, margin, and padding are all respected.</p>
+  </div>
+  <div class="inline-block-example">
+    <p>This text is in an inline-block element. Notice how the width, height, margin, and padding are all respected, and the inline-block element behaves like an inline element except for the width, height, margin, and padding are all respected.</p>
+  </div>
+</body>
+
 </html>
