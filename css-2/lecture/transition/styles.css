@@ -1,0 +1,34 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.animation{
+
+
+    transition: 1s;
+
+
+
+    /* You can furthur customize each duration of transition like so */
+    /* transition: width 1s, height 1s, background-color 1s, border-radius 1s; */
+}
+
+.box:hover {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.many-box .small-box{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: green;
+}
+
+.many-box:hover{
+    margin-left:300px;
+}
