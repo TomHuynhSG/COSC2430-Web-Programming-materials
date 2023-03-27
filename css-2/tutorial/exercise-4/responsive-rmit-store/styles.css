@@ -1,0 +1,143 @@
+body {
+    background-color: #000054;
+    color: white
+}
+
+
+
+/* Default Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E61E2A;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-nav-icon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #E61E2A;
+    display: none;
+}
+
+
+/* Responsive Collapse Navigation Bar (Hambuger Menu) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon:hover+.navbar {
+        display: block;
+    }
+
+    .navbar:hover {
+        display: block;
+    }
+}
+
+
+/* 3-column Layout */
+h1 {
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product {
+	width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+}
+
+.product img {
+	width: 100%;
+	height: auto;
+}
+
+.product h2 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.product p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+/* Responsive 1-column Layout */
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+        padding: 0px 30px;
+	}
+	
+	.product {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
