@@ -3,6 +3,9 @@ body {
     color: white
 }
 
+
+
+/* Default Navigation Bar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -40,6 +43,8 @@ body {
     display: none;
 }
 
+
+/* Responsive Collapse Navigation Bar (Hambuger Menu) */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -74,4 +79,65 @@ body {
     .navbar:hover {
         display: block;
     }
+}
+
+
+/* 3-column Layout */
+h1 {
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.product {
+	width: calc(33.33% - 40px);
+	margin-bottom: 40px;
+}
+
+.product img {
+	width: 100%;
+	height: auto;
+}
+
+.product h2 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.product p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+/* Responsive 1-column Layout */
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+        padding: 0px 30px;
+	}
+	
+	.product {
+		width: 100%;
+		margin-bottom: 40px;
+	}
 }

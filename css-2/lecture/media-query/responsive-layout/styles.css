@@ -1,0 +1,51 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product {
+	width: calc(33.33% - 20px);
+	margin-bottom: 40px;
+}
+
+.product img {
+	width: 100%;
+	height: auto;
+}
+
+.product h2 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.product p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	
+	.product {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
