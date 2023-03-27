@@ -12,7 +12,7 @@
     display: block;
     background-color: lightgreen;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid black;
     width: 250px;
     height: 140px;
@@ -23,7 +23,7 @@
     display: inline-block;
     background-color: pink;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid black;
     width: 200px;
     height: 180px;
