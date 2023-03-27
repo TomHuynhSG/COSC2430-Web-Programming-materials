@@ -1,0 +1,27 @@
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+    /* margin-left: 100px; */
+    left: 100px;
+}
+
+.blue {
+    background-color: darkblue;
+    /* margin-left: 200px; */
+    left: 200px;
+}
+
