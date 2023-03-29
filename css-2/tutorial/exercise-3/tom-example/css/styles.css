@@ -1,3 +1,4 @@
+
 body {
   color: #40514E;
   margin: 0;
@@ -7,7 +8,7 @@ body {
 
 h1 {
   color: #66BFBF;
-  font-size: 5.625rem;
+  font-size: 90px;
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
 }
@@ -15,7 +16,7 @@ h1 {
 h2 {
   color: #66BFBF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: normal;
   padding-bottom: 10px;
 }
@@ -70,6 +71,14 @@ a:hover {
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-row img {
+  width:200px;
+  height:200px;
+  margin: 0 20px;
 }
 
 .pro {
@@ -88,7 +97,7 @@ a:hover {
 
 .copyright {
   color: #EAF6F6;
-  font-size: 0.75rem;
+  font-size: 15px;
   padding: 20px 0;
 }
 
@@ -102,18 +111,6 @@ a:hover {
   position: absolute;
   left: 250px;
   bottom: 300px;
-}
-
-.code-img {
-  width: 20%;
-  float: left;
-  margin-right: 30px;
-}
-
-.cat-img {
-  width: 20%;
-  float: right;
-  margin-left: 30px;
 }
 
 .btn {
@@ -141,4 +138,13 @@ a:hover {
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+/* Responsive 1-column Layout */
+@media only screen and (max-width: 768px) {
+  .skill-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
