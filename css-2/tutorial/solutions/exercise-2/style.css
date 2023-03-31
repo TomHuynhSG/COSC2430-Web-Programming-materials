@@ -3,9 +3,10 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 }
 
-.robots {
+.android {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .head, 
