@@ -5,5 +5,5 @@ if (today === 6) {
 } else if (today === 0) {
   console.log("Today is Sunday");
 } else {
-  console.log("Looking forward to the Weekend");
+  console.log("Looking forward to the Weekday");
 }
