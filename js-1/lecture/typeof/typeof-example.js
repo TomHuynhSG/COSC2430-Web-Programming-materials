@@ -1,15 +1,23 @@
-typeof "";
-typeof 5;
-typeof 5.0;
-typeof function () {} ;
-typeof wtv;
+let a;
+typeof a; // "undefined"
 
-var wtv
-typeof wtv;
+a = "hello world";
+typeof a; // "string"
 
-var wtv = null;
-typeof wtv;
+a = 42;
+typeof a; // "number"
 
-typeof [3, 1, 4];
+a = true;
+typeof a; // "boolean"
 
-typeof typeof [3, 1, 4];
+a = null;
+typeof a; // "object"
+
+a = undefined;
+typeof a; // "undefined"
+
+a = [3, "black", "dog"];
+typeof a; // "object"
+
+a = { b: "c" };
+typeof a; // "object"
