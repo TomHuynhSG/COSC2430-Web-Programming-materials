@@ -4,7 +4,7 @@ function sayHello(name) {
 }
 
 // Assign the function to a variable
-const welcome = sayHello;
+let welcome = sayHello;
 
 // Call the function using the variable
 welcome('Alice'); // Output: Hello, Alice!

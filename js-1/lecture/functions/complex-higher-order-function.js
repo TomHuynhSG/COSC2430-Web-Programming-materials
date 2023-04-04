@@ -13,8 +13,8 @@ function performOperation(operation, a, b) {
 }
 
 // use the higher-order function to perform different operations
-const result1 = performOperation(add, 5, 3); // returns 8
-const result2 = performOperation(subtract, 5, 3); // returns 2
+let result1 = performOperation(add, 5, 3); // returns 8
+let result2 = performOperation(subtract, 5, 3); // returns 2
 
 console.log(result1); // 8
 console.log(result2); // 2
