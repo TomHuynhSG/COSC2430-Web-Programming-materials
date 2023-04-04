@@ -1,3 +1,0 @@
-move();
-move();
-move();
