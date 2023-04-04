@@ -8,6 +8,3 @@ function exampleFunction() {
   }
 
 exampleFunction();
-
-
-
