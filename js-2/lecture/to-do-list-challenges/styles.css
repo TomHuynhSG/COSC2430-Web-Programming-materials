@@ -1,0 +1,26 @@
+/* YOUR STYLE GOES IN HERE */
+
+.banner {
+    width:400px;
+}
+
+.not-done {
+    color: blue;
+}
+
+.not-done::after {
+    content: " (Not yet!)";
+}
+
+.done {
+    color: grey;
+}
+
+.done::after {
+    content: " (Done!)";
+}
+
+#done-all-btn {
+    background-color: red;
+    color: white;
+}

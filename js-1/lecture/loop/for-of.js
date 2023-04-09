@@ -1,6 +1,6 @@
-const myString = 'Hi there!';
+let myString = 'Hi there!';
 
-for (const char of myString) {
+for (let char of myString) {
   console.log(char);
 }
 

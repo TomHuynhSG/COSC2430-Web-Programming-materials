@@ -1,14 +1,16 @@
 let studentGPAs = {
-    red: '#E61E2A',
-    yellow: '#FAC800',
-    blue: '#000054'
+    tom: 3.8,
+    jerry: 2.5,
+    charles: 4.0
 }
 
-// Two ways to access a value via a key
-rmitColors['red']; // returns '#E61E2A'
-rmitColors.red; // returns '#E61E2A'
+// Modify a gpa of tom
+studentGPAs['tom']= 4.0;
 
-// Not possible to use syntax . for a variable
-let color = 'blue'
-rmitColors[color]; // returns '#000054'
-rmitColors.color // Not possible, returns undefined
+// Can use either [] or . to modify the values
+// like how we access the values
+// Modify all gpa to US gpa system
+studentGPAs.tom= 'A+';
+studentGPAs['jerry']= 'B-';
+studentGPAs.charles= 'C+';
+
