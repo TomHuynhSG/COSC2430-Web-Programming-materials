@@ -34,6 +34,6 @@ function rollDices() {
 
   // Display the result and the sum on the screen
 
-
+  // Play the sound effect of spinning
 
 }

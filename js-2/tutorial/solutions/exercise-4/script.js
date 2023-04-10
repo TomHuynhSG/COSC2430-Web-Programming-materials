@@ -50,6 +50,7 @@ function rollDices() {
   // Display the result and the sum on the screen
   resultDiv.textContent = `${result} (Sum: ${sum})`;
 
+  // Play the sound effect of spinning
   let audio = new Audio("assets/spin.mp3");
   audio.play();
 }
