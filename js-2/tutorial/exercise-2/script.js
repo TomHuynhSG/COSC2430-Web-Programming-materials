@@ -1,3 +1,5 @@
+// Change any of these lines of code here to complete your tasks
+
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");

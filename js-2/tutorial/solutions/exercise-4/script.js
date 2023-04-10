@@ -49,4 +49,7 @@ function rollDices() {
 
   // Display the result and the sum on the screen
   resultDiv.textContent = `${result} (Sum: ${sum})`;
+
+  let audio = new Audio("assets/spin.mp3");
+  audio.play();
 }

@@ -11,7 +11,7 @@ const button = document.querySelector('#generate-btn');
 
 });
 
-function generatePokemon(pokemonNumber=151, animated=true){
+function generatePokemon(pokemonNumber=100, animated=true){
     if (animated==true) {
         var baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/';
         var fileExtension = 'gif';
