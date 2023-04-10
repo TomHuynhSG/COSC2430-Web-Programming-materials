@@ -35,21 +35,21 @@ mySecondListItem.innerText = "I want to sleep till the end of the day!";
 
 // Get the imagine link url and change it to another link
 bannerImg = document.querySelector(".banner");
-bannerImg.setAttribute('src','https://www.sheknows.com/wp-content/uploads/2018/08/dgldbejjyofmcsfvkfd9.jpeg?w=1920')
+bannerImg.setAttribute('src','https://www.sheknows.com/wp-content/uploads/2018/08/dgldbejjyofmcsfvkfd9.jpeg?w=1920');
 
 // Change all list items to be done
 myListItems = document.querySelectorAll("ul li");
 myListItems.forEach(item => {
     item.classList.remove("not-done");
     item.classList.add("done");
-})
+});
 
 // Change all list items from done to be not done and vice versa.
 myListItems = document.querySelectorAll("ul li");
 myListItems.forEach(item => {
     item.classList.toggle("not-done");
     item.classList.toggle("done");
-})
+});
 
 // EventListener Challenges
 
