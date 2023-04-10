@@ -2,6 +2,10 @@
     width:400px;
 }
 
+ul li{
+    cursor: pointer;
+}
+
 .not-done {
     color: blue;
 }

@@ -1,6 +1,6 @@
 let words = ['dog', 'dig', 'log', 'bag', 'wag'];
 
-words.every(word => word.length ===3);  // true
+words.every(word => word.length === 3);  // true
 
 words.every(word => word[0] === 'd');  // false
 
