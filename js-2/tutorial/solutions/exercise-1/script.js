@@ -11,3 +11,4 @@ function handleItemClick(event) {
 }
 
 itemList.addEventListener('click', handleItemClick);
+

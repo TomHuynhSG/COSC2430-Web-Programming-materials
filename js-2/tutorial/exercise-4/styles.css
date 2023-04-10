@@ -1,0 +1,49 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    margin: 20px;
+}
+
+.bet {
+    margin-bottom: 20px;
+}
+
+#dices {
+    margin: 20px 0px;
+}
+
+.dice {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 10px;
+}
+
+#roll {
+    padding: 10px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+}
+
+#result {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#result.win {
+    color: green;
+}
+
+#result.lose {
+    color: red;
+}

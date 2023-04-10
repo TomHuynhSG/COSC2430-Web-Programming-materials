@@ -1,0 +1,7 @@
+ul li{
+    cursor: pointer;
+}
+
+.completed {
+    color: grey;
+}

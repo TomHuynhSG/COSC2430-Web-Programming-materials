@@ -1,0 +1,38 @@
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+
+.pokemon img {
+    display: block;
+    margin: 5px;
+}
+
+
+
+/* Form CSS */
+form {
+    margin: 20px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="checkbox"] {
+    font-size: 20px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+#generate-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

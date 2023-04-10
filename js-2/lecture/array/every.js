@@ -1,3 +1,5 @@
+
+
 let words = ['dog', 'dig', 'log', 'bag', 'wag'];
 
 words.every(word => word.length === 3);  // true
