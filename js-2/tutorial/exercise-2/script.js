@@ -1,3 +1,5 @@
+// Modify these code to complete your tasks
+
 var button = document.getElementById("enter"); // Get reference to the button element with id "enter"
 var input = document.getElementById("userinput"); // Get reference to the input element with id "userinput"
 var ul = document.querySelector("ul"); // Get reference to the unordered list (ul) element
