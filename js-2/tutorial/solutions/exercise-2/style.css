@@ -18,3 +18,11 @@
     -8px -8px 0 firebrick,
     -30px 20px 40px dimgrey;
 }
+
+ul li span {
+  cursor: pointer;
+}
+
+ul li:active {
+  color: red;
+}

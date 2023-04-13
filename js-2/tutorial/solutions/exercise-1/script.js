@@ -5,9 +5,7 @@ const itemList = document.querySelector('#item-list');
 
 function handleItemClick(event) {
   const item = event.target;
-  if (item.classList.contains('item')) {
-    item.classList.toggle('completed');
-  }
+  item.classList.toggle('completed');
 }
 
 itemList.addEventListener('click', handleItemClick);
