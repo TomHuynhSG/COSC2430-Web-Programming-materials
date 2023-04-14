@@ -1,5 +1,7 @@
 // Export a single object
 module.exports = {
-    name: 'Charles',
-    age: 40
+    name: 'James',
+    age: 30
 };
+
+

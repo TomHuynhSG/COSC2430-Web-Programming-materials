@@ -1,0 +1,18 @@
+{
+  "name": "fun-superhero-joke-project",
+  "version": "1.0.0",
+  "description": "a simple project for learning node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "give-me-a-joke": "^0.5.1",
+    "superheroes": "^3.0.0"
+  }
+}
+
+
