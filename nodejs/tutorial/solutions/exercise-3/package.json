@@ -9,6 +9,7 @@
   "author": "Tom Huynh",
   "license": "ISC",
   "dependencies": {
+    "cat-ascii-faces": "^2.0.0",
     "chalk": "^2.4.2",
     "figlet": "^1.6.0"
   }

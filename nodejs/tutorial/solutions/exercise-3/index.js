@@ -1,5 +1,6 @@
 const figlet = require('figlet');
 const chalk = require('chalk');
+let cats = require('cat-ascii-faces');
 
 // Check if the text and color arguments are provided
 if (process.argv.length < 3) {
@@ -22,5 +23,12 @@ figlet(text, function (err, data) {
 
     // Apply color to the ASCII art output
     const coloredOutput = chalk[color](data);
+
+    // Print a random cat text emojis
+    console.log(cats());
+
     console.log(coloredOutput);
+
+    // Print a random cat text emojis
+    console.log(cats());
 });
