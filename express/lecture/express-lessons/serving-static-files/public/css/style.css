@@ -1,4 +1,6 @@
-/* YOUR STYLE GOES IN HERE */
+body{
+    text-align: center;
+}
 
 h1 {
     text-transform: uppercase;
@@ -11,4 +13,9 @@ h1 {
     text-decoration: underline;
     text-decoration-color: plum;
     text-decoration-style: wavy;
+}
+
+
+img {
+    width: 400px;
 }

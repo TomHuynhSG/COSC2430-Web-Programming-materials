@@ -1,0 +1,33 @@
+<!-- products.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Listing</title>
+  </head>
+  <body>
+    <h1>Product Listing</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < products.length; i++) { %>
+          <tr>
+            <td><%= products[i].name %></td>
+            <td><%= products[i].price.toFixed(2) %></td>
+            <td>
+              <%= products[i].stock %>
+              <% if (products[i].stock < 10) { %>
+                <span style="color: red;">(Low stock!)</span>
+              <% } %>
+            </td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
