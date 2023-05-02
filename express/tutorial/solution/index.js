@@ -20,13 +20,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/order', (req, res) => {
-    res.render('order');
+    res.render('order', {products: products});
 });
 
 app.post('/checkout', (req, res) => {
         // Log the form data received from the client
-        console.log("Data received from the frontend for POST form:");
-        console.log(req.body);
+        // console.log("Data received from the frontend for POST form:");
+        // console.log(req.body);
         const filteredProducts = products.filter(product => req.body.products.includes(product.id.toString()));
         res.render('order-summary', {customerName: `${req.body.firstName} ${req.body.lastName}`, products: filteredProducts});
 });

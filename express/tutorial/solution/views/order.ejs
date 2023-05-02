@@ -68,30 +68,15 @@
                 <h4 class="mb-3">Purchase Options</h4>
                 <div class="form-group">
                     <label>Choose product(s):</label><br>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="1" id="product1">
-                        <label class="form-check-label" for="product1">Fairtrade Pocket Hoodie</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="2" id="product2">
-                        <label class="form-check-label" for="product2">Fairtrade Zip Hoodie</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="3" id="product3">
-                        <label class="form-check-label" for="product3">Rudby Jergy</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="4" id="product4">
-                        <label class="form-check-label" for="product4">Topaz Premium Zip Jacket</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="5" id="product5">
-                        <label class="form-check-label" for="product5">Rmit Fairtrade Polo</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="products[]" value="6" id="product6">
-                        <label class="form-check-label" for="product6">Portable Charger</label>
-                    </div>
+
+                    <% products.forEach(function(product){ %>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="<%= product.id %>" id="product<%= product.id %>">
+                            <label class="form-check-label" for="product<%= product.id %>"><%= product.name %> - $<%= product.price %></label>
+                        </div>
+          
+                      <% }); %>
                 </div>
             </fieldset>
 
