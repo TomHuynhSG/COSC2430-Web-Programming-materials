@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RMIT Store</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/rmit-favicon.png" type="image/png" />
+
+    <!-- CSS stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!--==========Navigation Section==========-->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span><img class="logo" src="assets/images/rmit-store-logo.png" alt="RMIT logo"></span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="/#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="/order" class="nav-link">Order Now</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </header>
+    </div>
+    <!--==========Navigation Section==========-->
+
+    <!--==========Checkout Form Section==========-->
+    <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <h2>Checkout form</h2>
+            <p class="lead">Please fill in this checkout form to complete the order of your purchase!</p>
+          </div>
+      
+          <div>
+              <h4 class="mb-3">Billing address</h4>
+              <!-- The form is here -->
+              <form method="POST" action="/checkout">
+                <!-- Personal Information Section -->
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" required="" name="firstName">
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" required="" name="lastName">
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required="" name="email">
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" name="address">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="" name="country">
+                      <option value="">Choose...</option>
+                      <option>Vietnam</option>
+                      <option>Australia</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required="" name="state">
+                      <option value="">Choose...</option>
+                      <option>Melbourne</option>
+                      <option>Sydney</option>
+                      <option>Ho Chi Minh</option>
+                      <option>Ha Noi</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="" name="zip">
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Purchase Options Section -->
+                <fieldset>
+                    <h4 class="mb-3">Purchase Options</h4>
+                    <div class="form-group">
+                        <label>Choose product(s):</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="fairtrade-pocket-hoodie" id="product1">
+                            <label class="form-check-label" for="product1">Fairtrade Pocket Hoodie</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="fairtrade-zip-hoodie" id="product2">
+                            <label class="form-check-label" for="product2">Fairtrade Zip Hoodie</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="rudby-jergy" id="product3">
+                            <label class="form-check-label" for="product3">Rudby Jergy</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="topaz-premium-zip-jacket" id="product4">
+                            <label class="form-check-label" for="product4">Topaz Premium Zip Jacket</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="rmit-fairtrade-polo" id="product5">
+                            <label class="form-check-label" for="product5">Rmit Fairtrade Polo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="portable-charger" id="product6">
+                            <label class="form-check-label" for="product6">Portable Charger</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <hr class="my-4">
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Order Now!</button>
+              </form>
+            </div>
+        </main>
+      
+      </div>
+    <!--==========Checkout Form Section==========-->
+
+
+    <!--==========Footer Area==========-->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="/#products" class="nav-link px-2 text-body-secondary">Products</a></li>
+                <li class="nav-item"><a href="/order" class="nav-link px-2 text-body-secondary">Order Now</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 RMIT Store, Inc</p>
+        </footer>
+    </div>
+    <!--==========Footer Area==========-->
+
+    <!-- JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
