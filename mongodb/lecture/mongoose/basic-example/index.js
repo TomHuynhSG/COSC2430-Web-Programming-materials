@@ -14,29 +14,29 @@ const personSchema = new mongoose.Schema({
 // Define a model based on the schema
 const Person = mongoose.model('Person', personSchema);
 
-// // Create a new document
-// const person = new Person({
-//   name: 'John Doe',
-//   age: 30
-// });
+// Create a new document
+const person = new Person({
+  name: 'John Doe',
+  age: 30
+});
 
-// // Save the document to the database
-// person.save()
-// .then(() => console.log('Document saved'))
-// .catch((error) => console.log(error.message))
+// Save the document to the database
+person.save()
+.then(() => console.log('Document saved'))
+.catch((error) => console.log(error.message))
 
 
-// // Find documents
-// Person.find()
-// .then((persons) => console.log(persons))
-// .catch((error) => console.log(error.message));
+// Find documents
+Person.find()
+.then((persons) => console.log(persons))
+.catch((error) => console.log(error.message));
 
 // Update a document
-// Person.findOneAndUpdate({ name: 'John Doe' }, { age: 45 })
-// .then(() => console.log('Document updated'))
-// .catch((error) => console.log(error.message));
+Person.findOneAndUpdate({ name: 'John Doe' }, { age: 45 })
+.then(() => console.log('Document updated'))
+.catch((error) => console.log(error.message));
 
-// // Delete a document
+// Delete a document
 Person.deleteOne({ name: 'John Doe' })
 .then(() => console.log('Document deleted'))
 .catch((error) => console.log(error.message));
