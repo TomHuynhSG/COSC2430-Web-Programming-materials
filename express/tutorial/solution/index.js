@@ -15,10 +15,6 @@ app.get('/', (req, res) => {
     res.render('home', {products: products});
 });
 
-app.get('/', (req, res) => {
-    res.render('home', {products: products});
-});
-
 app.get('/order', (req, res) => {
     res.render('order', {products: products});
 });

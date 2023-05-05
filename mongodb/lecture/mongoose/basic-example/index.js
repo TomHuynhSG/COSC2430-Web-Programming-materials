@@ -25,7 +25,6 @@ person.save()
 .then(() => console.log('Document saved'))
 .catch((error) => console.log(error.message))
 
-
 // Find documents
 Person.find()
 .then((persons) => console.log(persons))
