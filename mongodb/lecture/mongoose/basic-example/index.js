@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Replace <password> with the actual password for the user
-mongoose.connect('mongodb+srv://tomhuynh:mypassword@cluster0.coimmkg.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://tomhuynh:mypassword@cluster0.coimmkg.mongodb.net/test?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB Atlas'))
 .catch((error) => console.log(error.message));
 
@@ -40,3 +40,16 @@ Person.findOneAndUpdate({ name: 'John Doe' }, { age: 45 })
 Person.deleteOne({ name: 'John Doe' })
 .then(() => console.log('Document deleted'))
 .catch((error) => console.log(error.message));
+
+// Insert many documents
+const people = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 35 }
+];
+
+Person.insertMany(people)
+.then(() => console.log('Many documents saved'))
+.catch((error) => console.log(error.message));
+
+
