@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Delete Product</title>
+  </head>
+  <body>
+    <h1>Delete Product</h1>
+    <form action="/product/<%= product._id %>/delete" method="POST">
+      <p>Are you sure you want to delete the product "<%= product.name %>"?</p>
+      <input type="submit" value="Delete">
+    </form>
+  </body>
+</html>

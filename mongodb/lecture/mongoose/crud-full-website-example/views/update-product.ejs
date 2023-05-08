@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Update Product</title>
+  </head>
+  <body>
+    <h1>Update Product</h1>
+    <form action="/product/<%= product._id %>/update" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="<%= product.name %>">
+      <br>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" min="0" value="<%= product.price %>">
+      <br>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"><%= product.description %></textarea>
+      <br>
+      <label for="onSale">On Sale (true or false):</label>
+      <input type="text" name="onSale" value="<%= product.onSale %>" required><br>
+      <br>
+      <label for="categories">Categories:</label>
+      <select id="categories" name="categories">
+        <option value="">Select a category</option>
+        <option value="eletronics" <% if (product.categories === "eletronics") { %>selected<% } %>>Eletronics</option>
+        <option value="beauty products" <% if (product.categories === "beauty products") { %>selected<% } %>>Beauty Products</option>
+        <option value="toys" <% if (product.categories === "toys") { %>selected<% } %>>Toys</option>
+      </select>
+      <br>
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>

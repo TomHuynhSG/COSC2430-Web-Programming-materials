@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Product</title>
+  </head>
+  <body>
+    <h1>Create Product</h1>
+    <form action="/product" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" required><br>
+
+      <label for="price">Price:</label>
+      <input type="number" name="price" min="0" required><br>
+
+      <label for="description">Description:</label>
+      <textarea name="description"></textarea><br>
+
+
+      <label for="onSale">On Sale (true or false):</label>
+      <input type="text" name="onSale" required><br>
+
+      <label for="categories">Categories:</label>
+      <select name="categories">
+        <option value="eletronics">Eletronics</option>
+        <option value="beauty products">Beauty Products</option>
+        <option value="toys">Toys</option>
+      </select><br>
+
+      <input type="submit" value="Create">
+    </form>
+  </body>
+</html>
