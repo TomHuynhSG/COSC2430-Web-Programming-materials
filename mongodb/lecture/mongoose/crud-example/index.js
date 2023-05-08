@@ -59,7 +59,7 @@ app.get('/products/:id', (req, res) => {
   Product.findById(req.params.id)
     .then((product) => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.send(product);
     })
@@ -71,7 +71,7 @@ app.post('/products/:id/update', (req, res) => {
   Product.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((product) => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.send(product);
     })
@@ -84,7 +84,7 @@ app.post('/products/:id/delete', (req, res) => {
   Product.findByIdAndDelete(req.params.id)
     .then((product) => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.send(product);
     })

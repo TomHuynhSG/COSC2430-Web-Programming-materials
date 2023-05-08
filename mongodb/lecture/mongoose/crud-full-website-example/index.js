@@ -72,7 +72,7 @@ app.get('/product/:id/update', (req, res) => {
   Product.findById(req.params.id)
     .then(product => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.render('update-product', { product });
     })
@@ -96,7 +96,7 @@ app.post('/product/:id/update', (req, res) => {
     })
     .then(product => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.redirect('/products');
     })
@@ -108,7 +108,7 @@ app.get('/product/:id/delete', (req, res) => {
   Product.findById(req.params.id)
     .then(product => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.render('delete-product', { product });
     })
@@ -120,7 +120,7 @@ app.post('/product/:id/delete', (req, res) => {
   Product.findByIdAndDelete(req.params.id)
     .then(product => {
       if (!product) {
-        return res.send();
+        return res.send('Not found any product matching the ID!');
       }
       res.redirect('/products');
     })
