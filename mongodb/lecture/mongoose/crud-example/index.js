@@ -41,7 +41,6 @@ app.use(express.urlencoded({ extended: true }));
 // CREATE - Create a new product
 app.post('/products', (req, res) => {
   const product = new Product(req.body);
-  console.log(req.body);
   product.save()
     .then((product) => res.send(product))
     .catch((error) => res.send(error));
