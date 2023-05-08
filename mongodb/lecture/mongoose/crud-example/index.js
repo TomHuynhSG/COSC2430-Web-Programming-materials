@@ -68,18 +68,7 @@ app.get('/products/:id', (req, res) => {
 
 // UPDATE - Update a product by ID
 app.post('/products/:id/update', (req, res) => {
-  const updates = Object.keys(req.body);
-  const allowedUpdates = ['name', 'price', 'description', 'onSale', 'categories'];
-  const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
-
-  if (!isValidOperation) {
-    return res.send({ error: 'Invalid updates!' });
-  }
-
-  Product.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true,
-  })
+  Product.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((product) => {
       if (!product) {
         return res.send();
