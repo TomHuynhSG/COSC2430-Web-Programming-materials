@@ -1,3 +1,9 @@
+// The "seed.js" file in the model folder is used to populate the database with sample data.
+
+// By running this file, we can quickly and easily populate the database with sample data 
+// that can be used for testing or demonstration purposes. 
+// It can also be used to populate the database with initial data when the application is first deployed.
+
 const products = [
     {
         image: "p-1.jpg",

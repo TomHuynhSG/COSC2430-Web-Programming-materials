@@ -16,6 +16,8 @@ const productSchema = new mongoose.Schema({
 // Define a model based on the schema
 const Product = mongoose.model('Product', productSchema);
 
+
+// the module exports the "Product" model so that it can be used by other parts of the application.
 module.exports = Product;
 
 
