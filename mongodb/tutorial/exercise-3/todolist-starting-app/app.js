@@ -1,18 +1,14 @@
-//jshint esversion:6
-
 const express = require("express");
-const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const _ = require("lodash");
-
 const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({extended: true}));
+// Use the `express.urlencoded` middleware to parse incoming form data
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://ENTER YOUR MONGODB ATLAS CONNECTION URI HERE", {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://tomhuynh:mypassword@cluster0.coimmkg.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true})
   .then(() => {
     console.log("Connected to MongoDB Atlas");
   })
@@ -41,14 +37,6 @@ const item3 = new Item({
 
 const defaultItems = [item1, item2, item3];
 
-const listSchema = {
-  name: String,
-  items: [itemsSchema]
-};
-
-const List = mongoose.model("List", listSchema);
-
-
 app.get("/", function(req, res) {
   Item.find({})
     .then((foundItems) => {
@@ -64,33 +52,20 @@ app.get("/", function(req, res) {
     .catch((err) => {
       console.log(err);
     });
-});
-
-
-app.get("/:customListName", function(req, res){
-  const customListName = _.capitalize(req.params.customListName);
-
-  // Fill in your code here!
-
 
 });
 
 app.post("/", function(req, res){
-
-  const itemName = req.body.newItem;
-  const listName = req.body.list;
-
   // Fill in your code here!
+
 
 
 });
 
 
 app.post("/delete", function(req, res){
-  const checkedItemId = req.body.checkbox;
-  const listName = req.body.listName;
-
   // Fill in your code here!
+
 
 
 });
