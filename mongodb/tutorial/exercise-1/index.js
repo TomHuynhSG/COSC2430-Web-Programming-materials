@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://tomhuynh:mypassword@cluster0.coimmkg.mongodb.net/classroom?retryWrites=true&w=majority')
+// Please replace the MongoDB Atlas URI to yours!
+mongoose.connect('mongodb+srv://username:password@mongodb.atlas.url/classroom?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB Atlas'))
 .catch((error) => console.log(error.message));
 
