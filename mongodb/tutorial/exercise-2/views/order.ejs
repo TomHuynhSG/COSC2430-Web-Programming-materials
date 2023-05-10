@@ -1,0 +1,95 @@
+<%- include ('partials/head') %>
+<%- include ('partials/nav') %>
+
+<!--==========Checkout Form Section==========-->
+<div class="container">
+    <main>
+        <div class="py-5 text-center">
+        <h2>Checkout form</h2>
+        <p class="lead">Please fill in this checkout form to complete the order of your purchase!</p>
+        </div>
+    
+        <div>
+            <h4 class="mb-3">Billing address</h4>
+            <!-- The form is here -->
+            <form method="POST" action="/checkout">
+            <!-- Personal Information Section -->
+            <div class="row g-3">
+                <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" required="" name="firstName">
+                </div>
+    
+                <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" required="" name="lastName">
+                </div>
+    
+                <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required="" name="email">
+                </div>
+    
+                <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" name="address">
+                </div>
+    
+                <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required="" name="country">
+                    <option value="">Choose...</option>
+                    <option>Vietnam</option>
+                    <option>Australia</option>
+                </select>
+                </div>
+    
+                <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required="" name="state">
+                    <option value="">Choose...</option>
+                    <option>Melbourne</option>
+                    <option>Sydney</option>
+                    <option>Ho Chi Minh</option>
+                    <option>Ha Noi</option>
+                </select>
+                </div>
+    
+                <div class="col-md-3">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="" name="zip">
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Purchase Options Section -->
+            <fieldset>
+                <h4 class="mb-3">Purchase Options</h4>
+                <div class="form-group">
+                    <label>Choose product(s):</label><br>
+
+                    <% products.forEach(function(product){ %>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="products[]" value="<%= product.id %>" id="product<%= product.id %>">
+                            <label class="form-check-label" for="product<%= product.id %>"><%= product.name %> - $<%= product.price %></label>
+                        </div>
+          
+                      <% }); %>
+                </div>
+            </fieldset>
+
+            <hr class="my-4">
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Order Now!</button>
+            </form>
+        </div>
+    </main>
+    
+    </div>
+<!--==========Checkout Form Section==========-->
+
+
+<%- include ('partials/footer') %>
+
+
