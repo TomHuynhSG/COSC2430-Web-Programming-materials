@@ -39,7 +39,7 @@ app.get('/students/:id', (req, res) => {
   Student.findById(req.params.id)
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })
@@ -51,7 +51,7 @@ app.post('/students/:id/update', (req, res) => {
   Student.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })
@@ -63,7 +63,7 @@ app.post('/students/:id/delete', (req, res) => {
   Student.findByIdAndDelete(req.params.id)
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })

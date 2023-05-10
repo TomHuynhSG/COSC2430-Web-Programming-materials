@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://tomhuynh:mypassword@cluster0.coimmkg.mongodb.net/classroom?retryWrites=true&w=majority')
+// Please replace the MongoDB Atlas URI to yours!
+mongoose.connect('mongodb+srv://username:password@mongodb.atlas.url/classroom?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB Atlas'))
 .catch((error) => console.log(error.message));
 
@@ -38,7 +39,7 @@ app.get('/students/:id', (req, res) => {
   Student.findById(req.params.id)
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })
@@ -50,7 +51,7 @@ app.post('/students/:id/update', (req, res) => {
   Student.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })
@@ -62,7 +63,7 @@ app.post('/students/:id/delete', (req, res) => {
   Student.findByIdAndDelete(req.params.id)
     .then((student) => {
       if (!student) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(student);
     })
@@ -101,7 +102,7 @@ app.get('/courses/:id', (req, res) => {
   Course.findById(req.params.id)
     .then((course) => {
       if (!course) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(course);
     })
@@ -113,7 +114,7 @@ app.post('/courses/:id/update', (req, res) => {
   Course.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((course) => {
       if (!course) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(course);
     })
@@ -125,7 +126,7 @@ app.post('/courses/:id/delete', (req, res) => {
   Course.findByIdAndDelete(req.params.id)
     .then((course) => {
       if (!course) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(course);
     })
@@ -164,7 +165,7 @@ app.get('/lecturers/:id', (req, res) => {
   Lecturer.findById(req.params.id)
     .then((lecturer) => {
       if (!lecturer) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(lecturer);
     })
@@ -176,7 +177,7 @@ app.post('/lecturers/:id/update', (req, res) => {
   Lecturer.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then((lecturer) => {
       if (!lecturer) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(lecturer);
     })
@@ -189,7 +190,7 @@ app.post('/courses/:id/delete', (req, res) => {
   Lecturer.findByIdAndDelete(req.params.id)
     .then((lecturer) => {
       if (!lecturer) {
-        return res.send();
+        return res.send("Cannot found that ID!");
       }
       res.send(lecturer);
     })
