@@ -1,3 +1,5 @@
+/* Reference from Pure CSS Gradient Background Animation: https://codepen.io/P1N2O/pen/pyBNzX */
+
 .gradient-background {
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
