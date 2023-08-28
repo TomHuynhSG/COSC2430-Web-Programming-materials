@@ -1,35 +1,34 @@
-// // Import chalk library
+const figlet = require('figlet');
 const chalk = require('chalk');
+let cats = require('cat-ascii-faces');
 
-// Get user name and age from command line arguments
-const [name, age] = process.argv.slice(2);
+// Check if the text and color arguments are provided
+if (process.argv.length < 3) {
+    console.error('Please provide a text argument.');
+    process.exit(1);
+}
 
-// Highlight name in red and age in green using chalk
-const highlightedName = chalk.red(name);
-const highlightedAge = chalk.green(age);
+const text = process.argv[2];
+const color = process.argv[3] || 'yellow'; // Default color is white
 
-// Print out the user name and age with highlighting
-console.log(`Name: ${highlightedName}`);
-console.log(`Age: ${highlightedAge}`);
+// Generate ASCII art from the text
+figlet(text, function (err, data) {
+    if (err) {
+        console.error(err);
+        process.exit(1);
+    }
 
+    // Without chalk, we can simply return:
+    // console.log(data);
 
-// Extra challenge Solution
-// const readline = require('readline');
+    // Apply color to the ASCII art output
+    const coloredOutput = chalk[color](data);
 
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
+    // Print a random cat text emojis
+    console.log(cats());
 
-// // Prompt for name
-// rl.question('What is your name? ', (name) => {
-//     // Prompt for age
-//     rl.question('What is your age? ', (age) => {
-//         // Print out name and age
-//         console.log(`Name: ${name}`);
-//         console.log(`Age: ${age}`);
+    console.log(coloredOutput);
 
-//         // Close the readline interface
-//         rl.close();
-//     });
-// });
+    // Print a random cat text emojis
+    console.log(cats());
+});

@@ -1,34 +1,24 @@
-const figlet = require('figlet');
-const chalk = require('chalk');
-let cats = require('cat-ascii-faces');
+const fs = require('fs');
 
-// Check if the text and color arguments are provided
-if (process.argv.length < 3) {
-    console.error('Please provide a text argument.');
-    process.exit(1);
-}
+// Create the src folder
+fs.mkdirSync('src');
 
-const text = process.argv[2];
-const color = process.argv[3] || 'yellow'; // Default color is white
+// Create the myapp folder inside src
+fs.mkdirSync('src/myapp');
 
-// Generate ASCII art from the text
-figlet(text, function (err, data) {
-    if (err) {
-        console.error(err);
-        process.exit(1);
-    }
+// Create the _init_.py file inside myapp
+fs.writeFileSync('src/myapp/_init_.py', '');
 
-    // Without chalk, we can simply return:
-    // console.log(data);
+// Create the utils.py file inside myapp
+fs.writeFileSync('src/myapp/utils.py', '');
 
-    // Apply color to the ASCII art output
-    const coloredOutput = chalk[color](data);
+// Create the test folder inside src
+fs.mkdirSync('src/test');
 
-    // Print a random cat text emojis
-    console.log(cats());
+// Create the _init_.py file inside test
+fs.writeFileSync('src/test/_init_.py', '');
 
-    console.log(coloredOutput);
+// Create the test_devision.py file inside test
+fs.writeFileSync('src/test/test_devision.py', '');
 
-    // Print a random cat text emojis
-    console.log(cats());
-});
+console.log('Folder structure created successfully!');

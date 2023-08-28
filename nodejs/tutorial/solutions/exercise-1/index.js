@@ -1,24 +1,35 @@
-const fs = require('fs');
+// // Import chalk library
+const chalk = require('chalk');
 
-// Create the src folder
-fs.mkdirSync('src');
+// Get user name and age from command line arguments
+const [name, age] = process.argv.slice(2);
 
-// Create the myapp folder inside src
-fs.mkdirSync('src/myapp');
+// Highlight name in red and age in green using chalk
+const highlightedName = chalk.red(name);
+const highlightedAge = chalk.green(age);
 
-// Create the _init_.py file inside myapp
-fs.writeFileSync('src/myapp/_init_.py', '');
+// Print out the user name and age with highlighting
+console.log(`Name: ${highlightedName}`);
+console.log(`Age: ${highlightedAge}`);
 
-// Create the utils.py file inside myapp
-fs.writeFileSync('src/myapp/utils.py', '');
 
-// Create the test folder inside src
-fs.mkdirSync('src/test');
+// Extra challenge Solution
+// const readline = require('readline');
 
-// Create the _init_.py file inside test
-fs.writeFileSync('src/test/_init_.py', '');
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-// Create the test_devision.py file inside test
-fs.writeFileSync('src/test/test_devision.py', '');
+// // Prompt for name
+// rl.question('What is your name? ', (name) => {
+//     // Prompt for age
+//     rl.question('What is your age? ', (age) => {
+//         // Print out name and age
+//         console.log(`Name: ${name}`);
+//         console.log(`Age: ${age}`);
 
-console.log('Folder structure created successfully!');
+//         // Close the readline interface
+//         rl.close();
+//     });
+// });
