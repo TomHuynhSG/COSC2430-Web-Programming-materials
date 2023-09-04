@@ -1,0 +1,10 @@
+
+<h1>Welcome, <%= user.name %>!</h1>
+<p>You are <%= user.age %> years old.</p>
+<p>Your hobbies:</p>
+<ul>
+    <% user.hobbies.forEach(function(hobby) { %>
+        <li><%= hobby %></li>
+    <% }); %>
+</ul>
+

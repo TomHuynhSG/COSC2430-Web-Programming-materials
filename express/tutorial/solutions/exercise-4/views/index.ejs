@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Express App</title>
+</head>
+<body>
+    <h1>Welcome, <%= user.name %>!</h1>
+    <p>You are <%= user.age %> years old.</p>
+    <p>Your hobbies:</p>
+    <ul>
+        <% user.hobbies.forEach(function(hobby) { %>
+            <li><%= hobby %></li>
+        <% }); %>
+    </ul>
+
+</body>
+</html>
