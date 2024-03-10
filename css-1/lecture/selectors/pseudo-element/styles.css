@@ -15,15 +15,6 @@ a::before {
     margin-right: 5px;
 }
 
-.target-2::after {
-    content: "Content after";
-    background-color: blue;
-}
-
-.target-4::first-letter {
-    color: green;
-}
-
 div::first-line {
     color: red;
 }
